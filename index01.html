@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jarvis.com</title>
+</head>
+<body class="background-image">
+    <form>
+        <div class="container" style="text-align: center;">
+            <p>
+                Qual o seu tipo de residência?
+            </p>
+            <p>
+                Casa: 
+                <input type="radio" name="residencia" id="casa">
+                Apartamento:
+                <input type="radio" name="residencia" id="apartamento">
+            </p>
+            <p>
+                Quanto medo você tem de ser assaltado?
+            </p>
+            <p>
+                Medo: 
+                <input type="radio" name="medo" id="1"> 
+                1
+                <input type="radio" name="medo" id="2">
+                2
+                <input type="radio" name="medo" id="3">
+                3
+                <input type="radio" name="medo" id="4">
+                4
+                <input type="radio" name="medo" id="5">
+                5
+            </p>
+            <p>
+                Você possui algum sistema de segurança em sua residência, como um alarme ou câmeras de segurança?
+            </p> 
+            <p>
+                Sim:
+                <input type="radio" name="seguranca" id="sim">
+
+                Não:
+                <input type="radio" name="seguranca" id="nao"> 
+            </p>
+            <p>
+                Com que frequência você tranca suas portas e janelas quando sai de casa?
+            </p>
+            <p>
+                Sempre:
+                <input type="radio" name="frequencia" id="sempre">
+                Às vezes, confio nos meus vizinhos:
+                <input type="radio" name="frequencia" id="asvezes">
+                Esqueço com frequência:
+                <input type="radio" name="frequencia" id="esqueco">
+            </p>
+            <p>
+                Sua residência possui iluminação externa de segurança, como sensores de movimento?    
+            </p>
+            <p>
+                Sim:
+                <input type="radio" name="iluminacao" id="sim">
+    
+                Não:
+                <input type="radio" name="iluminacao" id="nao">    
+            </p>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <p>
+                    <button type="button" id="btn-finalizar" onclick="exibirRecomendacao()">Finalizar formulário</button>
+                </p>
+                <div id="recomendacao-container"></div>
+            </div>    
+        </div>    
+    </form>
+    <script src="script.js"></script>   
+    </body>
+</html>
